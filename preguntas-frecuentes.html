@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>MiBarrio - Pregunstas Frecuentes</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <style>
+    .faq-container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 2rem;
+    }
+
+    .faq-title {
+      font-size: 2.5rem;
+      color: #5D3A00;
+      text-align: center;
+      border-bottom: 3px solid #E07A5F;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+
+    .faq-item {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+
+    .faq-question {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #E07A5F;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .faq-question::before {
+      content: "+";
+      position: absolute;
+      left: -25px;
+      color: #81B29A;
+      font-weight: bold;
+    }
+
+    .faq-answer {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.6;
+      margin-top: 0.5rem;
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-item.active .faq-question::before {
+      content: "−";
+      color: #E07A5F;
+    }
+  </style>
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout position_head" >
+    
+      <!-- header -->
+      <header>
+    <div class="header">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-3 logo_section">
+            <div class="full">
+              <div class="center-desk">
+                <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <nav class="navigation navbar navbar-expand-md navbar-dark">
+              <div class="collapse navbar-collapse" id="navbarMiBarrio">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="quienes-somos.html">¿Quiénes somos?</a></li>
+                  <li class="nav-item"><a class="nav-link" href="categorias.html">Categorías</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- contact section -->
+      <div class="faq-container">
+    <h1 class="faq-title">Preguntas Frecuentes – MiBarrioApp</h1>
+
+    <div class="faq-item">
+      <div class="faq-question">1. ¿Qué es MiBarrioApp?</div>
+      <div class="faq-answer">MiBarrioApp es una plataforma digital que visibiliza y conecta a trabajadores informales de La Paz, como caseras, plomeros, modistas o cocineras, con personas que necesitan sus servicios en sus barrios.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">2. ¿Necesito tener NIT o RUC para registrarme como proveedor?</div>
+      <div class="faq-answer">No. A diferencia de otras apps, en MiBarrioApp no necesitas trámites ni documentos formales. Está pensada para trabajadores por cuenta propia que muchas veces están fuera del sistema formal.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">3. ¿Qué tipo de servicios puedo encontrar en la app?</div>
+      <div class="faq-answer">Puedes encontrar comida casera, costura, electricidad, plomería, reparaciones técnicas, cuidado personal, limpieza y más, todo filtrado por zona o distrito.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">4. ¿Cómo contacto a los proveedores?</div>
+      <div class="faq-answer">Cada perfil tiene botones de contacto directo por WhatsApp o llamada. No necesitas intermediarios.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">5. ¿La app cobra comisiones por los servicios?</div>
+      <div class="faq-answer">No. MiBarrioApp no cobra comisiones ni fija precios. Los acuerdos son directamente entre proveedor y cliente.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">6. ¿Cómo puedo confiar en un proveedor?</div>
+      <div class="faq-answer">La comunidad puede dejar valoraciones y reseñas. Además, algunos trabajadores pueden obtener un sello “Verificado por vecinos”.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">7. ¿Puedo usar la app sin internet?</div>
+      <div class="faq-answer">Sí. MiBarrioApp tiene un modo sin conexión para que puedas consultar tus proveedores favoritos aunque no tengas datos móviles.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">8. ¿Qué es un perfil inteligente de proveedor?</div>
+      <div class="faq-answer">Es un perfil que evoluciona con el tiempo, mostrando cuántos clientes atendiste, tus calificaciones, y sugerencias para mejorar tu visibilidad.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">9. ¿Para qué se usan los datos de la app?</div>
+      <div class="faq-answer">Se usan de forma anónima para generar estadísticas e informes que pueden ayudar a planificar ferias, detectar demandas de servicios o apoyar políticas públicas.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">10. ¿Cómo me registro como trabajador o proveedor?</div>
+      <div class="faq-answer">Puedes descargar la app, completar tu perfil básico con tu nombre, tipo de servicio, zona, horarios y medio de contacto. ¡Nada más!</div>
+    </div>
+  </div>
+
+      <!-- end contact section -->
+      <!--  footer -->
+       <footer>
+    <div class="footer">
+      <div class="container">
+        <ul class="location_icon">
+          <li><a href="#"><i class="fa fa-map-marker"></i></a><br> La Paz, Bolivia</li>
+          <li><a href="#"><i class="fa fa-phone"></i></a><br> +591 71234567</li>
+          <li><a href="#"><i class="fa fa-envelope"></i></a><br> contacto@mibarrioapp.bo</li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <p>© 2025 MiBarrioApp. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+       
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+     <script>
+    const items = document.querySelectorAll('.faq-item');
+
+    items.forEach(item => {
+      item.querySelector('.faq-question').addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+      <!-- google map js -->
+      <!-- end google map js --> 
+   </body>
+</html>
+
