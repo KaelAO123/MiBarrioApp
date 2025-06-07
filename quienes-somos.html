@@ -1,294 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>MiBarrio - Quienes somos</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <style>
+<html lang="es">
 
-    .section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  color: #5D3A00;
-  text-align: center;
-  border-bottom: 3px solid #E07A5F;
-  padding-bottom: 0.5rem;
-  text-transform: uppercase;
-}
-.item-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-top: 1.5rem;
-  color: #E07A5F;
-  position: relative;
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MiBarrio - ¿Quiénes somos?</title>
 
-.item-title::before {
-  content: "✔";
-  color: #81B29A;
-  font-weight: bold;
-  margin-right: 8px;
-}
-.item-text {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #6D6875;
-  margin-bottom: 1.2rem;
-}
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="images/fevicon.png" type="image/png" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfcfb;
     }
 
-    .section-title {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-      color: #333;
+    .card {
+      border: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-radius: 1rem;
     }
 
-    .item-title {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin-top: 1rem;
-      color: #444;
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
 
-    .item-text {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #555;
-      margin-bottom: 1rem;
+    .navbar {
+      background-color: #5D3A00;
     }
 
-    .card-box {
-      background-color: #81B29A;
-      border: 2px solid #5D3A00;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-top: 2rem;
+    .navbar .nav-link,
+    .navbar .navbar-brand {
+      color: white;
+    }
+
+    .navbar .nav-link.active,
+    .navbar .nav-link:hover {
+      color: #E07A5F;
+    }
+
+    .banner {
+      background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      padding: 8rem 1rem;
+    }
+
+    h1,
+    h2 {
+      font-weight: 800;
+    }
+
+    .card-title {
+      color: #5D3A00;
+    }
+
+    .text-primary {
+      color: #E07A5F !important;
+    }
+
+    .text-success {
+      color: #81B29A !important;
+    }
+
+    footer {
+      background-color: #49330f;
+      color: white;
+      padding: 30px 15px;
+      font-weight: 500;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      box-shadow: 0 -6px 20px rgba(93, 58, 0, 0.5);
+    }
+    .location_icon {
+      padding-left: 0;
+      list-style: none;
+      max-width: 400px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .location_icon li {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    .card-box img {
-      width: 150px;
-      border-radius: 8px;
-    }
-
-    .card-content {
-      flex: 1;
-    }
-
-    .card-content h2 {
-      font-size: 1.5rem;
-      color: #5D3A00;
-      margin-bottom: 0.5rem;
-    }
-
-    .card-content p {
+      gap: 8px;
       font-size: 1rem;
-      color: #333;
-      line-height: 1.6;
+      flex: 1 1 120px;
+    }
+    .location_icon li i {
+      font-size: 1.5rem;
+      color: #E07A5F;
+    }
+    .copyright {
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+
+    .section-divider {
+      height: 4px;
+      width: 80px;
+      margin: 0 auto 1.5rem;
+      background: linear-gradient(to right, #E07A5F, #F2CC8F);
+      border-radius: 10px;
     }
   </style>
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-   </head>
-   <!-- body -->
-   <body class="main-layout position_head" >
-    
-      <!-- header -->
-      <header>
-    <div class="header">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-md-3 logo_section">
-            <div class="full">
-              <div class="center-desk">
-                <div class="logo">
-                  <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-9">
-            <nav class="navigation navbar navbar-expand-md navbar-dark">
-              <div class="collapse navbar-collapse" id="navbarMiBarrio">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                  <li class="nav-item active"><a class="nav-link" href="quienes-somos.html">¿Quiénes somos?</a></li>
-                  <li class="nav-item"><a class="nav-link" href="categorias.html">Categorías</a></li>
-                  <li class="nav-item"><a class="nav-link" href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
-                  <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-      <!-- end header inner -->
-      <!-- end header -->
-      <!-- contact section -->
-        <div class="container">
-    <h1 class="section-title">Misión y Visión</h1>
+</head>
 
-    <div class="card-box">
-      <img src="https://cdn-icons-png.flaticon.com/256/3316/3316832.png" alt="Imagen misión">
-      <div class="card-content">
-        <h2>Misión</h2>
-        <p>Impulsar la transformación social mediante la tecnología, brindando visibilidad, oportunidades y herramientas digitales a trabajadores informales, fortaleciendo el desarrollo comunitario y económico desde lo local.</p>
-      </div>
-    </div>
+<body>
 
-    <div class="card-box">
-      <img src="https://cdn-icons-png.flaticon.com/512/1934/1934048.png" alt="Imagen visión">
-      <div class="card-content">
-        <h2>Visión</h2>
-        <p>Ser la plataforma líder en inclusión digital para el trabajo informal en Latinoamérica, reconocida por su impacto positivo, confianza comunitaria y enfoque humano en el uso de la tecnología.</p>
-      </div>
-    </div>
-  </div>
-     <div class="container">
-    <h1 class="section-title">Principios</h1>
-
-    <div class="principle">
-      <h2 class="item-title">Inclusión digital</h2>
-      <p class="item-text">Democratizamos el acceso a la tecnología, brindando oportunidades equitativas a trabajadores informales de todas las edades y niveles educativos.</p>
-    </div>
-
-    <div class="principle">
-      <h2 class="item-title">Empoderamiento comunitario</h2>
-      <p class="item-text">Fortalecemos a los barrios y comunidades al visibilizar el trabajo local y generar redes de confianza y apoyo mutuo.</p>
-    </div>
-
-    <div class="principle">
-      <h2 class="item-title">Accesibilidad y simplicidad</h2>
-      <p class="item-text">Diseñamos una plataforma fácil de usar, con funciones claras, accesibles desde cualquier dispositivo y sin barreras tecnológicas.</p>
-    </div>
-
-    <div class="principle">
-      <h2 class="item-title">Innovación social con propósito</h2>
-      <p class="item-text">Utilizamos herramientas tecnológicas (IA, mapas, mensajería) para resolver problemas reales con impacto social y económico.</p>
-    </div>
-
-    <div class="principle">
-      <h2 class="item-title">Transparencia y confianza</h2>
-      <p class="item-text">Fomentamos la valoración justa del trabajo mediante calificaciones, comentarios y perfiles verificables.</p>
-    </div>
-
-    <h1 class="section-title">Valores</h1>
-
-    <div class="value">
-      <h2 class="item-title">Compromiso social</h2>
-      <p class="item-text">Trabajamos por una sociedad más justa, en la que todos tengan oportunidades de crecimiento laboral.</p>
-    </div>
-
-    <div class="value">
-      <h2 class="item-title">Solidaridad</h2>
-      <p class="item-text">Nos apoyamos mutuamente como comunidad digital y territorial, valorando el esfuerzo de los trabajadores independientes.</p>
-    </div>
-
-    <div class="value">
-      <h2 class="item-title">Honestidad</h2>
-      <p class="item-text">Promovemos relaciones de confianza entre usuarios y proveedores a través de información clara y veraz.</p>
-    </div>
-
-    <div class="value">
-      <h2 class="item-title">Responsabilidad</h2>
-      <p class="item-text">Asumimos el impacto de nuestra plataforma en la vida de las personas y buscamos siempre mejorar el servicio ofrecido.</p>
-    </div>
-
-    <div class="value">
-      <h2 class="item-title">Equidad</h2>
-      <p class="item-text">No discriminamos por género, edad, ubicación o nivel educativo. Todos tienen un lugar y una voz en MiBarrioApp.</p>
-    </div>
-
-    <div class="value">
-      <h2 class="item-title">Sostenibilidad</h2>
-      <p class="item-text">Nuestro modelo fomenta el desarrollo económico local y sostenible, reduciendo brechas de informalidad y exclusión.</p>
-    </div>
-    <br></br>
-  </div>
-
-      <!-- end contact section -->
-      <!--  footer -->
-       <footer>
-    <div class="footer">
-      <div class="container">
-        <ul class="location_icon">
-          <li><a href="#"><i class="fa fa-map-marker"></i></a><br> La Paz, Bolivia</li>
-          <li><a href="#"><i class="fa fa-phone"></i></a><br> +591 71234567</li>
-          <li><a href="#"><i class="fa fa-envelope"></i></a><br> contacto@mibarrioapp.bo</li>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><img src="images/logo.png" alt="Logo" height="40"
+          class="me-2" />CaserosApp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="quienes-somos.html">¿Quiénes somos?</a></li>
+          <li class="nav-item"><a class="nav-link" href="categorias.html">Categorías</a></li>
+          <li class="nav-item"><a class="nav-link" href="preguntas-frecuentes.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
         </ul>
       </div>
-      <div class="copyright">
-        <div class="container">
-          <p>© 2025 MiBarrioApp. Todos los derechos reservados.</p>
+    </div>
+  </nav>
+
+
+
+  <!-- Contenido principal -->
+  <main class="container py-5">
+
+    <!-- Misión y Visión -->
+    <h1 class="text-center text-primary">Misión y Visión</h1>
+    <div class="section-divider"></div>
+
+    <div class="row g-4 mb-5 mt-4">
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body text-center">
+            <img src="https://cdn-icons-png.flaticon.com/256/3316/3316832.png" class="rounded-circle mb-3" width="90"
+              height="90" alt="Misión">
+            <h5 class="card-title">Misión</h5>
+            <p class="card-text">Impulsar la transformación social mediante la tecnología, brindando visibilidad,
+              oportunidades y herramientas digitales a trabajadores informales para fortalecer el desarrollo comunitario
+              y económico local.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body text-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/1934/1934048.png" class="rounded-circle mb-3" width="90"
+              height="90" alt="Visión">
+            <h5 class="card-title">Visión</h5>
+            <p class="card-text">Ser la plataforma líder en inclusión digital para el trabajo informal en Latinoamérica,
+              reconocida por su impacto positivo, confianza comunitaria y enfoque humano en el uso de la tecnología.</p>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
-      <!-- end footer -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-      <script>
-         // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-         // Australia.
-         function initMap() {
-           var map = new google.maps.Map(document.getElementById('map'), {
-             zoom: 11,
-             center: {lat: 40.645037, lng: -73.880224},
-             });
-         
-         var image = 'images/maps-and-flags.png';
-         var beachMarker = new google.maps.Marker({
-             position: {lat: 40.645037, lng: -73.880224},
-             map: map,
-             icon: image
-           });
-         }
-      </script>
-      <!-- google map js -->
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
-      <!-- end google map js --> 
-   </body>
-</html>
 
+    <!-- Principios -->
+    <h2 class="text-center text-primary">Nuestros Principios</h2>
+    <div class="section-divider"></div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+      <!-- Cada tarjeta representa un principio -->
+      <div class="col">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="fa fa-leaf fa-2x text-success mb-3"></i>
+            <h6 class="fw-bold text-success">Inclusión digital</h6>
+            <p class="text-muted">Democratizamos el acceso a la tecnología, brindando oportunidades equitativas a
+              trabajadores informales de todas las edades y niveles educativos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="fa fa-users fa-2x text-success mb-3"></i>
+            <h6 class="fw-bold text-success">Empoderamiento comunitario</h6>
+            <p class="text-muted">Fortalecemos los barrios al visibilizar el trabajo local y generar redes de confianza
+              y apoyo mutuo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="fa fa-mobile-alt fa-2x text-success mb-3"></i>
+            <h6 class="fw-bold text-success">Accesibilidad y simplicidad</h6>
+            <p class="text-muted">Diseñamos una plataforma fácil de usar, accesible desde cualquier dispositivo y sin
+              barreras tecnológicas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="fa fa-lightbulb fa-2x text-success mb-3"></i>
+            <h6 class="fw-bold text-success">Innovación social con propósito</h6>
+            <p class="text-muted">Aplicamos tecnología como IA y geolocalización para resolver problemas reales con
+              impacto social.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="fa fa-shield-alt fa-2x text-success mb-3"></i>
+            <h6 class="fw-bold text-success">Transparencia y confianza</h6>
+            <p class="text-muted">Fomentamos la valoración justa del trabajo mediante calificaciones, comentarios y
+              perfiles verificables.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Valores -->
+    <h2 class="text-center text-primary">Nuestros Valores</h2>
+    <div class="section-divider"></div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <!-- Cada tarjeta representa un valor -->
+      <div class="col">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="fa fa-heart fa-2x text-success mb-3"></i>
+            <h6 class="fw-bold text-success">Compromiso social</h6>
+            <p class="text-muted">Trabajamos por una sociedad más justa, en la que todos tengan oportunidades de
+              crecimiento laboral.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="fa fa-hands-helping fa-2x text-success mb-3"></i>
+            <h6 class="fw-bold text-success">Solidaridad</h6>
+            <p class="text-muted">Nos apoyamos mutuamente como comunidad digital y territorial, valorando el esfuerzo de
+              los trabajadores independientes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="fa fa-handshake fa-2x text-success mb-3"></i>
+            <h6 class="fw-bold text-success">Honestidad</h6>
+            <p class="text-muted">Promovemos relaciones de confianza entre usuarios y proveedores mediante información
+              clara y veraz.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="fa fa-balance-scale fa-2x text-success mb-3"></i>
+            <h6 class="fw-bold text-success">Responsabilidad</h6>
+            <p class="text-muted">Asumimos el impacto de nuestra plataforma y trabajamos para mejorar continuamente el
+              servicio.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="fa fa-equals fa-2x text-success mb-3"></i>
+            <h6 class="fw-bold text-success">Equidad</h6>
+            <p class="text-muted">No discriminamos por género, edad, ubicación o nivel educativo. Todos tienen un lugar
+              en CaserosApp.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="fa fa-leaf fa-2x text-success mb-3"></i>
+            <h6 class="fw-bold text-success">Sostenibilidad</h6>
+            <p class="text-muted">Fomentamos un modelo de crecimiento responsable con el medioambiente y la sociedad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <ul class="location_icon">
+      <li><i class="fa fa-map-marker-alt"></i> La Paz, Bolivia</li>
+      <li><i class="fa fa-phone"></i> +591 71234567</li>
+      <li><i class="fa fa-envelope"></i> contacto@CaserosApp.bo</li>
+    </ul>
+    <div class="copyright">
+      <p>© 2025 CaserosApp. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
